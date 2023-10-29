@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #60a9ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+button {
+    cursor: pointer;
+    background-color: #5783db;
+}
+
+
+#panel2,
+#panel3 {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 25px;
+  margin: 12%;
+  width: 100%;
+  height: 50vh;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#panel1 {
+    background-color: white;
+    border-radius: 10px;
+    padding: 35px 25px;
+    margin: 12%;
+    width: 100%;
+    height: 50vh;
+    max-width: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: center;
+    gap: 60px;
+}
+
+#panel1 > p > label {
+    font-size: 20px;
+    margin: 20px;
+}
+
+#panel1 > button {
+    padding: 15px 40px;
+    border-radius: 15px;
+}
+
+#topRow > button {
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#panel3 > button {
+    padding: 15px 40px;
+    border-radius: 15px;
+}
+
+#topRow {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 4%;
+}
+
+.AddNewCustomer > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 30px;
+  grid-auto-rows: minmax(30px, auto);
+  margin: 5%;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Admin login</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<form class="loginForm" id="panel1">
+    <h1>Login Page</h1>
+    <p>
+    <label for="login_id">Login Id:</label>
+    <input type="text" id="login_id" required><br><br>
+    </p>
+    <p>
+    <label for="password">Password:</label>
+    <input type="password" id="password" required><br><br>
+    </p>
+    <button type="submit" style="place-self: center">Submit</button>
+</form>
+    <div id="panel2">
+    <div id="topRow">
+        <button onclick="getAllCustomers()">Show All Customers</button>
+        <h2>Customer List</h2>
+        <div></div>
+        <div></div>
+    </div>
+        <table id="table">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Action</th>
+            </tr>
+        </table>
+    </div>
+<form class="AddNewCustomer" id="panel3">
+    <h1>Customer Details</h1>
+    <div id="customer-details-input-form">
+        <input type="text" id="firstName" placeholder="First name" name="firstName" required/>
+        <input type="text" id="lastName" placeholder="Last name" name="lastName" required/>
+        <input type="text" id="street" placeholder="street" name="street" />
+        <input type="text" id="address" placeholder="Address" name="address" />
+        <input type="text" id="city" placeholder="City" name="city" />
+        <input type="text" id="state" placeholder="State" name="state" />
+        <input type="email" id="email" placeholder="Email" name="email" />
+        <input type="text" id="phone" placeholder="Phone" name="phone" />
+    </div>
+    <button type="submit" style="place-self: center">Submit</button>
+</form>
+<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
